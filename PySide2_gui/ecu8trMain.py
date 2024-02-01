@@ -19,13 +19,13 @@ from datetime import datetime
 from mainFordSKModule import Ui_MainWindow
 from tle9012source import  TLE9012
 
-# sys.path.insert(0,'..')
-# sys.path.insert(0, "../bms")
-# sys.path.insert(0,'../env/Lib/site-packages')
-sys.path.append(r'D:\001_project\2023\ecu8tr-gui-mak-1-12-24\bms')
+sys.path.insert(0,'..')
+sys.path.insert(0, "../bms")
+sys.path.insert(0,'../env/Lib/site-packages')
+# sys.path.append(r'D:\001_project\2023\ecu8tr-gui-mak-1-12-24\bms')
 
-from kvaser import Kvaser
-from docan import DoCAN
+from bms.kvaser import Kvaser
+from bms.docan import DoCAN
 from canlib import canlib
 
 # Default source address
